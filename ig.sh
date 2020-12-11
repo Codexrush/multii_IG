@@ -50,11 +50,12 @@ echo -e '''
       \e[1;37m                _  __       _ 
       \e[1;37m__     | _|_ o |_)|_     o (_|
       \e[1;37m||||_| |  |_ | |_)|  ___ | __|
-   \e[1;37m[\e[1;31m Contact \e[1;31m:\e[1;34m https://www.instagram.com/mastah_illusion\e[1;37m ]
+   \e[1;37m[\e[1;31m Contact \e[1;31m:\e[1;34m088213740893 \e[1;37m ]
 
-1\e[1;31m. \e[1;37mDapatkan \e[1;31m+ \e[1;37mTarget Crack Dari \e[1;32m@username\e[1;37m
-2\e[1;31m. \e[1;37mDapatkan \e[1;31m+ \e[1;37mTarget Crack Dari \e[1;32m@hashtag\e[1;37m
-3\e[1;31m. \e[1;37mCrack Target Dari Daftarget\e[1;37m
+1\e[1;31m. \e[1;37mDapatkan \e[1;31mTarget \e[1;37mCrack Dari \e[1;32m@username\e[1;37m
+2\e[1;31m. \e[1;37mDapatkan \e[1;31mTarget \e[1;37mCrack Dari \e[1;32m@hashtag\e[1;37m
+3\e[1;31m. \e[1;37mCrack Target Dari Daftarget..\e[1;37m
+4\e[1;31m. \e[1;37mCek Lokasi Akun IG...\e[1;37m
 '''
 
 # asking
@@ -160,7 +161,7 @@ function brute_force(){
   						echo -e " ${white}[ ${red}FAILED TO CRACK${white} ] ${red}-${white} @${user}${red}:${white}${pass}"
   						killall -HUP tor
   					else
-  						echo -e " ${white}[ ${yellow}UNKNOWN ERROR${white} ]${red} ${white}- @${user}${red}:${white}${pass}"
+  						echo -e " ${white}[ ${yellow}GAGAL${white} ]${red} ${white}- @${user}${red}:${white}${pass}"
   						killall -HUP tor
   					fi
 }
@@ -179,18 +180,18 @@ function brute_force(){
 
 # check got account or not
 if [[ ! -e account_success_crack.txt ]]; then
-	echo -e "${white}\n[ ${red}!${white} ] Ups you don't get any account boy :("
+	echo -e "${white}\n[ ${red}!${white} ] Coba Lgi Cuk,Elu Belom Dapet AkunNya :)"
 else
 	echo -e "${white}[ ${red}+${white} ] You got ${red}:${green} $(< account_success_crack.txt wc -l) accounts instagram${white}"
 fi
 
 # asking for run again ot not
-echo -ne "${white}[ ${red}?${white} ] Wanna play with me again boy ${red}(${white} y/n${red} ) :${green} " ; read ask_again
+echo -ne "${white}[ ${red}?${white} ] Ingin Coba Lgi? ${red}(${white} y/n${red} ) :${green} " ; read ask_again
 if [[ $ask_again == "Y" || $ask_again == "y" ]]; then
-	echo -e "${white}[ ${red}+${white} ] Okay good! lets try again boy XD"
-	bash brute.sh
+	echo -e "${white}[ ${red}+${white} ] Mantapss Tetap Mecoba Walaupun Belum Ada Ke Pastian :'("
+	bash ig.sh
 elif [[ $ask_again == "N" || $ask_again == "n" ]]; then
-	echo -e "${white}[ ${red}+${white} ] See u boy:*"
+	echo -e "${white}[ ${red}+${white} ] See u later :*"
 	rm *.tmp*
 else
 	rm *.tmp*

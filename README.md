@@ -6,4 +6,5 @@ Saya Sebagai Author
 Tidak Akan Bertanggung Jawab !!!
 
 #GunakanDenganBijak
+#fikri ~> InYour./CYBER
 #CodeXrush
